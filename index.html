@@ -41,7 +41,18 @@
         <ul>
           <li>Enter your Git notes here</li>
           <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git checkout -b branch-name: Creates a new branch and switches to it</li>
+          <li>Git workflow guide: <ol>
+            <li><code>git pull origin main</code> Pulls latest main branch to local</li>
+            <li><code>git checkout -b x</code> Creates a new branch so that changes won't affect main until merge, x represents branch name</li>
+            <li>Changes are made here</li>
+            <li><code>git add -A</code> Stages changes to local branch for commit</li>
+            <li><code>git commit -m</code> Commits changes locally "-m" adds message used to define changes</li>
+            <li><code>git pull origin main</code> Compares branch to main branch for compatablity issues</li>
+            <li><code>git push origin x</code> Pushes feature to remote, x represents name of branch</li>
+            <li>Pull request to merge branch with main</li>
+            <li><code>git checkout main</code> Returns gitbash to main branch</li>
+          </ol></li>
         </ul>
       </section>
    
